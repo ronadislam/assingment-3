@@ -19,6 +19,20 @@
         .sora-fonts {
             font-family: "Sora", serif;
         }
+        @keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    animation: fadeSlide 2s ease-out forwards;
+}
     </style>
 </head>
 <body class="sora-fonts ">
@@ -61,12 +75,12 @@
         <div class=" justify-around hero min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
           <div class="flex-col hero-content text-center">
             <div class="max-w-3xl">
-              <h1 class="text-5xl font-semibold ">Freshness <a class="text-[#179800]">You Can <br>
+              <h1 class="text-5xl font-semibold animate-text ">Freshness <a class="text-[#179800]">You Can <br>
                 Count</a> On, Prices You’ll Love!</h1>
-              <p class="py-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+              <p class="py-6 animate-text">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
               
             </div>
-            <div>
+            <div class="">
               <img src="./c2-assets/hero-vegetables.png" alt="">
             </div>
           </div>
@@ -247,7 +261,7 @@
        <section class="mx-auto">
         <h1 class="text-4xl text-[#179800] font-semibold mt-20 mx-auto w-5/6 mb-10">Arrival & Offers</h1>
         <div class="lg:flex w-5/6 mx-auto gap-5">
-            <div class=" bg-[#115414] p-10 rounded-3xl mb-10 flex-col  lg:grid grid-cols-2 flex ">
+            <div class=" bg-[#115414] p-10 rounded-3xl mb-10 flex-col  lg:grid grid-cols-2 flex  ">
               <div class=" flex items-center">
                 <div>
                  <img src="./c2-assets/dawat-logo.png" alt="">
@@ -260,7 +274,7 @@
             </div>
             </div>
 
-           <div class="card bg-[#102861] mb-10 grid grid-cols-2">
+           <div class="card bg-[#102861] mb-10 grid grid-cols-2 ">
             <div class="card-body ">
               <img class="w-20" src="./c2-assets/india-gate-logo.png" alt="">
               <button class=" text-1xl text-white px-10 py-4 bg-[#2A4D97] rounded-lg mt-6 mb-10 ">World’s No.1 </button>
@@ -277,6 +291,56 @@
     </main>
 
       <!-- footer_section -->
-       <footer></footer>
+       
+        <section class=" -mb-40 relative mt-32 mx-auto w-5/6">
+
+          <div class="hero bg-[#EFEBE3] rounded-xl">
+            <div class="hero-content flex-col justify-between lg:flex-row gap-32">
+              <img
+                src="./c2-assets/vegetable-busket.png"
+                class="max-w-sm" />
+              <div class="text-center lg:text-left">
+                <h1 class="text-4xl adlam-display-font mb-5">Get Grocery News!</h1>
+                <p class="text-xl mb-5">
+                  Exclusive training tips, ticks, product deals and more.
+                </p>
+                <input class="" type="text" placeholder="Enter email...." class="input font-normal text-xs text-[#C4C4C4] w-full max-w-sm mb-5" /> <br>
+                <button class="bg-[#179800] p-4 rounded-lg text-white">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+  </main>
+
+  <footer class="  bg-[#179800]  p-20 ">
+   <nav class="pt-52 footer gap-10 mx-auto w-5/6 justify-start lg:justify-between ">
+    <nav >
+      <div class="flex gap-5 mb-5">
+        <a class="text-2xl font-regular"> 
+        <img class="w-32 " src="./c2-assets/logo-footer.png" alt=""></a>
+          
+      </div>
+      <p class="text-xl text-Font text-white">Discover a world of treats, toys, and <br>
+         essentials handpicked for your furry friends</p>
+    </nav>
+    <nav>
+      <a class="link link-hover font-medium text-xl text-white">Contact us</a>
+      <a class="link link-hover font-medium text-xl text-white py-5">Services</a>
+      <a class="link link-hover font-medium text-xl text-white">Product</a>
+    </nav>
+    <nav class="mt-14">
+      <h6 class="font-semibold text-xl text-white mb-5">Follow us</h6>
+      <div class="flex gap-4">
+          <a href=""><img src="./c2-assets/Mask group (1).png" alt=""></a>
+          <a href=""><img src="./c2-assets/Mask group.png" alt=""></a>
+          <a href=""><img src="./c2-assets/Vector (1).png" alt=""></a>
+          <a href=""><img src="./c2-assets/Vector.png" alt=""></a>
+          
+      </div>
+    </nav>
+   </nav>
+  </footer>
+       
 </body>
 </html>
